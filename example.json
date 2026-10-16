@@ -1,0 +1,22 @@
+{
+  "rules": [
+    {
+      "action": "allow",
+      "source": "192.0.2.0/24",
+      "ports": 443,
+      "protocol": "tcp"
+    }
+  ],
+  "packets": [
+    {
+      "source": "192.0.2.5",
+      "port": 443,
+      "protocol": "tcp"
+    },
+    {
+      "source": "198.51.100.1",
+      "port": 22,
+      "protocol": "tcp"
+    }
+  ]
+}
